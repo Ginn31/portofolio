@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 1em 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 2em;
+    margin: 1em auto;
+    max-width: 800px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: left;
+    margin-bottom: 0.5em;
+    font-size: 2em;
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.3em;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 2px solid #333;
+}
+
+.about-text {
+    flex: 1;
+}
+.about-text p {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.3em; 
+    color: #333; 
+    margin: 0; 
+    overflow: hidden; /* Sembunyikan teks yang melebihi kotak */
+    animation: fadeInText 7s forwards; /* Animasi muncul selama 5 detik */
+    white-space: nowrap; /* Mencegah pemotongan kata */
+}
+
+@keyframes fadeInText {
+    from {
+        width: 0; /* Mulai dengan lebar 0 (teks tidak terlihat) */
+    }
+    to {
+        width: 100%; /* Berakhir dengan lebar penuh (teks terlihat sepenuhnya) */
+    }
+}
+
+.project {
+    margin-bottom: 2em;
+}
+
+.project h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.project-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Jarak antara foto */
+}
+
+.project-images img {
+    width: calc(50% - 5px); /* Lebar foto 50% dari lebar container, dikurangi jarak */
+    height: auto;
+    border-radius: 5px;
+}
+#contact {
+    margin-bottom: 100px; /* Tambahkan margin bottom untuk menghindari konten tertutup oleh footer */
+}
+
+.contact-info {
+    display: flex;
+    align-items: center; /* Mengatur item agar berada di tengah */
+}
+
+.contact-info p {
+    margin-right: 20px; /* Memberi jarak antara email dan Instagram */
+}
+
+.contact-info a {
+    color: #000;
+    text-decoration: none;
+    font-size: 1.4em;
+    display: flex; /* Mengatur item sebagai flex container */
+    align-items: center; /* Mengatur item agar berada di tengah */
+}
+
+.contact-info a i {
+    margin-right: 10px;
+    color: #000;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
